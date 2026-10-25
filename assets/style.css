@@ -140,7 +140,7 @@ textarea { min-height: 84px; resize: vertical; }
 .mini { font-family: var(--caps); font-weight: 700; font-size: .78rem; letter-spacing: .16em; text-transform: uppercase; color: var(--muted); }
 
 /* Fragen und Kontakt */
-.faq-contact .wrap { display: grid; grid-template-columns: 1.4fr 1fr; gap: 56px; }
+.faq-contact .wrap { display: grid; grid-template-columns: 1fr; gap: 56px; }
 details { border-top: 1px solid var(--line); padding-block: 14px; }
 details:last-child { border-bottom: 1px solid var(--line); }
 summary { cursor: pointer; font-weight: 600; }
