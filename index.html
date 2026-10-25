@@ -11,7 +11,7 @@
 <meta property="og:type" content="website">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23111a2c'/%3E%3Ctext x='16' y='23' font-family='Georgia,serif' font-size='20' fill='%239a7328' text-anchor='middle'%3EJM%3C/text%3E%3C/svg%3E">
 <link rel="stylesheet" href="assets/style.css">
-
+<script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
 <header class="top">
@@ -19,7 +19,7 @@
     <a class="logo" href="#start">Jakob Massury</a>
     <nav aria-label="Hauptnavigation">
       <a href="#ueber-mich">Über mich</a>
-      <a href="#angebot">Beratung</a>
+      <a href="#beratung">Beratung</a>
       <a href="#kontakt">Kontakt</a>
     </nav>
   </div>
@@ -35,20 +35,21 @@
           <a class="btn line" href="#kontakt">Kontakt</a>
         </div>
       </div>
-      <img class="portrait" alt="Porträt von Jakob Massury" width="800" height="800" src="assets/img/jakob-massury.jpg">
     </div>
+    <img class="cutout" alt="Porträt von Jakob Massury" width="857" height="900" src="assets/img/jakob-massury.webp">
   </section>
 
-
-
+  <div class="band" aria-hidden="true">
+    <div class="band-track"><span>Mathematik</span><span>Philosophie</span><span>Finanzen</span><span>Mathematik</span><span>Philosophie</span><span>Finanzen</span><span>Mathematik</span><span>Philosophie</span><span>Finanzen</span><span>Mathematik</span><span>Philosophie</span><span>Finanzen</span></div>
+  </div>
 
   <section class="about" id="ueber-mich">
     <div class="wrap">
-      <div class="head" style="margin-bottom:0">
+      <div class="head reveal" style="margin-bottom:0">
         <span class="kicker">Über mich</span>
         <h2>Mathematik, Philosophie und Finanzen</h2>
       </div>
-      <div class="copy">
+      <div class="copy reveal">
         <p>Ich bin Jakob Massury. Ich habe in Heidelberg Mathematik und Philosophie studiert und an der HEC Paris einen Master in Economics and Finance gemacht. Heute arbeite ich in Bonn als Research Analyst im Bereich Vermögensanlage.</p>
         <dl class="cv">
           <div><dt>2024–2026</dt><dd>Master in Economics and Finance, HEC Paris</dd></div>
@@ -56,7 +57,7 @@
           <div><dt>2018–2022</dt><dd>Bachelor in Mathematik und Philosophie, Universität Heidelberg</dd></div>
         </dl>
         <p><a class="li-icon" href="https://www.linkedin.com/in/jakob-massury" target="_blank" rel="noopener" aria-label="Jakob Massury auf LinkedIn"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a></p>
-        <blockquote class="quote" style="margin-top:32px;margin-left:0">
+        <blockquote class="quote">
           <p>„Nicht weil es schwer ist, wagen wir es nicht, sondern weil wir es nicht wagen, ist es schwer.“</p>
           <footer>Seneca</footer>
         </blockquote>
@@ -64,12 +65,17 @@
     </div>
   </section>
 
-  <section id="angebot">
+  <div class="band reverse" aria-hidden="true">
+    <div class="band-track"><span>Heidelberg</span><span>Paris</span><span>Limerick</span><span>Bonn</span><span>Heidelberg</span><span>Paris</span><span>Limerick</span><span>Bonn</span><span>Heidelberg</span><span>Paris</span><span>Limerick</span><span>Bonn</span><span>Heidelberg</span><span>Paris</span><span>Limerick</span><span>Bonn</span></div>
+  </div>
+
+  <section id="beratung">
     <div class="wrap">
-      <div class="head">
-        <h2>Beratung</h2>
-              </div>
-      <div class="offers">
+      <div class="head reveal">
+        <span class="kicker">Beratung</span>
+        <h2>Zu Finanzen und Geldanlage</h2>
+      </div>
+      <div class="offers reveal">
         <article class="offer">
           <p class="meta">30 Minuten · kostenlos</p>
           <h3>Kennenlerngespräch</h3>
@@ -82,20 +88,23 @@
     </div>
   </section>
 
+  <div class="window" role="img" aria-label="Drachenfels und Schloss Drachenburg im Siebengebirge"></div>
 
-  <section class="faq-contact" id="kontakt">
-    <div class="wrap">
-      <div class="contact">
-        <h2>Kontakt</h2>
-        <dl>
-          <div><dt>E-Mail</dt><dd>jakob.massury@gmail.com</dd></div>
-          <div><dt>Telefon</dt><dd>01575 9293067</dd></div>
-          <div><dt>LinkedIn</dt><dd><a href="https://www.linkedin.com/in/jakob-massury" target="_blank" rel="noopener">linkedin.com/in/jakob-massury</a></dd></div>
-        </dl>
-      </div>
+  <section class="contact-sec" id="kontakt">
+    <div class="wrap reveal">
+      <h2>Kontakt</h2>
+      <dl class="contact">
+        <div><dt>E-Mail</dt><dd><a href="mailto:jakob.massury@gmail.com">jakob.massury@gmail.com</a></dd></div>
+        <div><dt>Telefon</dt><dd><a href="tel:+4915759293067">01575 9293067</a></dd></div>
+        <div><dt>LinkedIn</dt><dd><a href="https://www.linkedin.com/in/jakob-massury" target="_blank" rel="noopener">jakob-massury</a></dd></div>
+      </dl>
     </div>
   </section>
 </main>
+
+  <div class="band" aria-hidden="true">
+    <div class="band-track"><span>Bonn</span><span>Siebengebirge</span><span>Rhein</span><span>Bonn</span><span>Siebengebirge</span><span>Rhein</span><span>Bonn</span><span>Siebengebirge</span><span>Rhein</span><span>Bonn</span><span>Siebengebirge</span><span>Rhein</span></div>
+  </div>
 
 <footer class="site">
   <div class="wrap">
@@ -103,5 +112,15 @@
     <span><a href="https://www.linkedin.com/in/jakob-massury" target="_blank" rel="noopener">LinkedIn</a> · <a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a></span>
   </div>
 </footer>
+<script>
+(function () {
+  var els = document.querySelectorAll(".reveal");
+  if (!("IntersectionObserver" in window)) { els.forEach(function (e) { e.classList.add("is-in"); }); return; }
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add("is-in"); io.unobserve(en.target); } });
+  }, { threshold: 0.15 });
+  els.forEach(function (e) { io.observe(e); });
+})();
+</script>
 </body>
 </html>
