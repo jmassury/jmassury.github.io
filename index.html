@@ -69,7 +69,7 @@ nav a:hover { color: var(--ink); }
 
 /* Auftakt */
 .hero { padding-block: 56px 0; }
-.hero .wrap { display: grid; grid-template-columns: 1fr 340px; gap: 40px 56px; align-items: center; padding-bottom: 56px; }
+.hero .wrap { display: grid; grid-template-columns: 1fr 340px; gap: 40px 56px; align-items: center; padding-bottom: 72px; }
 .hero-text { display: grid; gap: 24px; min-width: 0; }
 .hero h1 { font-size: clamp(3.2rem, 10vw, 7.6rem); letter-spacing: -.02em; line-height: .92; }
 .hero h1 em { font-style: italic; color: var(--brass); }
@@ -80,15 +80,6 @@ nav a:hover { color: var(--ink); }
 .btn { display: inline-flex; align-items: center; gap: 10px; padding: 13px 24px; border: 1px solid var(--ink); background: var(--ink); color: var(--paper); font: 600 .95rem var(--body); text-decoration: none; cursor: pointer; }
 .btn.line { background: transparent; color: var(--ink); }
 .btn:disabled { opacity: .4; cursor: not-allowed; }
-
-/* Laufende Fragen-Bänder */
-.ticker { background: var(--band); color: var(--band-ink); overflow: hidden; padding-block: 18px; white-space: nowrap; }
-.ticker-track { display: inline-flex; gap: 0; animation: run 38s linear infinite; }
-.ticker span { font-family: var(--caps); font-weight: 700; text-transform: uppercase; letter-spacing: .08em; font-size: clamp(1.4rem, 3.4vw, 2.4rem); padding-right: 1.4em; }
-.ticker span::after { content: "·"; padding-left: 1.4em; color: var(--brass); }
-.ticker.slow .ticker-track { animation-duration: 46s; animation-direction: reverse; }
-@keyframes run { from { transform: translateX(0); } to { transform: translateX(-50%); } }
-@media (prefers-reduced-motion: reduce) { .ticker-track { animation: none; } }
 
 section { padding-block: 88px; }
 .head { display: grid; gap: 14px; margin-bottom: 48px; max-width: 46em; }
@@ -234,13 +225,6 @@ footer.site a { text-decoration: none; }
     </div>
   </section>
 
-  <div class="ticker" aria-hidden="true">
-    <div class="ticker-track">
-      <span>Wo stehe ich heute</span><span>Was will ich erreichen</span><span>Wie viel Risiko passt zu mir</span><span>Wie komme ich dahin</span>
-      <span>Wo stehe ich heute</span><span>Was will ich erreichen</span><span>Wie viel Risiko passt zu mir</span><span>Wie komme ich dahin</span>
-    </div>
-  </div>
-
 
 
 
@@ -269,8 +253,7 @@ footer.site a { text-decoration: none; }
   <section id="angebot">
     <div class="wrap">
       <div class="head">
-        <span class="kicker">Beratung</span>
-        <h2>Gespräche über Geld</h2>
+        <h2>Beratung</h2>
               </div>
       <div class="offers">
         <article class="offer">
@@ -304,8 +287,7 @@ footer.site a { text-decoration: none; }
     <div class="wrap">
       <div>
         <div class="head" style="margin-bottom:24px">
-          <span class="kicker">Fragen</span>
-          <h2>Gut zu wissen</h2>
+          <h2>Fragen</h2>
         </div>
         <details><summary>Verkaufen Sie Finanzprodukte?</summary><p>Nein. Ich arbeite provisionsfrei gegen Honorar. Ich empfehle keine einzelnen Produkte, sondern helfe Ihnen, Ihre Finanzen zu verstehen und selbst gute Entscheidungen zu treffen.</p></details>
         <details><summary>Was kostet die Beratung?</summary><p>Das Kennenlerngespräch ist kostenlos. Eine Beratung kostet 180 €.</p></details>
@@ -313,8 +295,7 @@ footer.site a { text-decoration: none; }
         <details><summary>Kann ich einen Termin verschieben?</summary><p>Ja. Bis 24 Stunden vorher können Sie kostenlos umbuchen oder absagen. Eine kurze E-Mail genügt.</p></details>
       </div>
       <div class="contact">
-        <span class="kicker">Kontakt</span>
-        <h2>Lieber direkt?</h2>
+        <h2>Kontakt</h2>
         <dl>
           <div><dt>E-Mail</dt><dd>jakob.massury@gmail.com</dd></div>
           <div><dt>Telefon</dt><dd>01575 9293067</dd></div>
