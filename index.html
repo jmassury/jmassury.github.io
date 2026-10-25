@@ -104,9 +104,10 @@ section { padding-block: 88px; }
 ol.klar { margin: 0; padding: 0; }
 
 /* Angebot */
-.offers { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; border-top: 1px solid var(--ink); }
-.offer { padding: 28px 24px 8px 0; display: grid; gap: 12px; align-content: start; min-width: 0; }
+.offers { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0; border-top: 1px solid var(--ink); }
+.offer { padding: 28px 24px 28px 0; display: grid; gap: 12px; align-content: start; min-width: 0; }
 .offer + .offer { padding-left: 24px; border-left: 1px solid var(--line); }
+.offer h3 { font-size: clamp(1.8rem, 3.6vw, 2.6rem); line-height: 1.1; }
 .offer .meta { font-family: var(--caps); text-transform: uppercase; letter-spacing: .12em; font-size: .78rem; color: var(--muted); }
 .offer p:not(.meta) { color: var(--muted); }
 
@@ -255,24 +256,16 @@ footer.site a { text-decoration: none; }
     <div class="wrap">
       <div class="head">
         <span class="kicker">Was ich mache</span>
-        <h2>Drei Wege, mit mir zu arbeiten</h2>
-        <p>Das Kennenlerngespräch ist kostenlos. Für alles Weitere gilt ein festes Honorar, das Sie vorab kennen.</p>
-      </div>
+        <h2>Angebot</h2>
+              </div>
       <div class="offers">
         <article class="offer">
-          <p class="meta">30 Minuten · Video-Call · kostenlos</p>
+          <p class="meta">30 Minuten · kostenlos</p>
           <h3>Kennenlerngespräch</h3>
-          <p>Wir sprechen über Ihre Ziele und Ihre Ausgangslage und klären, ob eine Zusammenarbeit passt.</p>
         </article>
         <article class="offer">
           <p class="meta">90 Minuten · online oder in Bonn</p>
           <h3>Beratung</h3>
-          <p>Bestandsaufnahme von Vermögen, Rücklagen, Altersvorsorge und laufenden Kosten, mit schriftlicher Zusammenfassung.</p>
-        </article>
-        <article class="offer">
-          <p class="meta">3 Termine · über ca. 6 Wochen</p>
-          <h3>Begleitung</h3>
-          <p>Für Fragen, die mehr Zeit brauchen. Wir arbeiten über mehrere Termine an Ihrer Anlagestrategie.</p>
         </article>
       </div>
     </div>
@@ -323,7 +316,7 @@ footer.site a { text-decoration: none; }
           <h2>Gut zu wissen</h2>
         </div>
         <details><summary>Verkaufen Sie Finanzprodukte?</summary><p>Nein. Ich arbeite provisionsfrei gegen Honorar. Ich empfehle keine einzelnen Produkte, sondern helfe Ihnen, Ihre Finanzen zu verstehen und selbst gute Entscheidungen zu treffen.</p></details>
-        <details><summary>Was kostet die Beratung?</summary><p>Das Kennenlerngespräch ist kostenlos. Eine Beratung kostet 180 €, die Begleitung mit drei Terminen 480 €.</p></details>
+        <details><summary>Was kostet die Beratung?</summary><p>Das Kennenlerngespräch ist kostenlos. Eine Beratung kostet 180 €.</p></details>
         <details><summary>Wie läuft ein Online-Termin ab?</summary><p>Sie erhalten vorab einen Link zum Video-Call. Sie brauchen nur einen Browser.</p></details>
         <details><summary>Kann ich einen Termin verschieben?</summary><p>Ja. Bis 24 Stunden vorher können Sie kostenlos umbuchen oder absagen. Eine kurze E-Mail genügt.</p></details>
       </div>
